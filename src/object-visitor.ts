@@ -5,9 +5,10 @@ export type VistorCallbackChildren<T> = (current: T, ctx?: any) => Array<T> | un
 const defaultChildren: VistorCallbackChildren<any> = current => current.children
 
 /**
- * visitor is a method to traverse an Object or an array that a a Tree like shape
+ * visitor is a method to traverse an Object or an array that has a Tree like shape
  *
  * @example
+ * ```js
  * const tree = [
  *  {
  *    label: "first",
@@ -32,6 +33,7 @@ const defaultChildren: VistorCallbackChildren<any> = current => current.children
  *    ]
  *  }
  * ]
+ * ```
  *
  *
  * @param current the current visited object, can be an Array or a object
